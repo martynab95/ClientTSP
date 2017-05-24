@@ -30,10 +30,10 @@
         {
             this.button1 = new System.Windows.Forms.Button();
             this.Adress = new System.Windows.Forms.TextBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.port_p = new System.Windows.Forms.NumericUpDown();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.Polaczenie = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.port_p)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -54,17 +54,17 @@
             this.Adress.TabIndex = 1;
             this.Adress.Text = "Adress";
             // 
-            // numericUpDown1
+            // port_p
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(465, 37);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
+            this.port_p.Location = new System.Drawing.Point(465, 37);
+            this.port_p.Maximum = new decimal(new int[] {
             65535,
             0,
             0,
             0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(240, 20);
-            this.numericUpDown1.TabIndex = 2;
+            this.port_p.Name = "port_p";
+            this.port_p.Size = new System.Drawing.Size(240, 20);
+            this.port_p.TabIndex = 2;
             // 
             // listBox1
             // 
@@ -82,6 +82,7 @@
             this.Polaczenie.TabIndex = 4;
             this.Polaczenie.Text = "Polacz";
             this.Polaczenie.UseVisualStyleBackColor = true;
+            this.Polaczenie.Click += new System.EventHandler(this.Polaczenie_Click);
             // 
             // Przycisk
             // 
@@ -90,12 +91,12 @@
             this.ClientSize = new System.Drawing.Size(764, 530);
             this.Controls.Add(this.Polaczenie);
             this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.port_p);
             this.Controls.Add(this.Adress);
             this.Controls.Add(this.button1);
             this.Name = "Przycisk";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.port_p)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -105,7 +106,7 @@
 
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox Adress;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown port_p;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Button Polaczenie;
     }
